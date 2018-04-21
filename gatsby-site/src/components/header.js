@@ -3,36 +3,39 @@ import Link from 'gatsby-link'
 
 import headerImage from './../images/header.jpg';
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <div
     style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
+      background: '#f5f5f5',
+      marginBottom: '3rem',
+      borderBottom: '2px solid #e6e6e6',
     }}
   >
-    <div>
-      <img src={headerImage} alt={'Header image'} />
-    </div>
+    <img
+      src={headerImage}
+      alt={'Header image'}
+    />
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960,
+        maxWidth: 980,
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+      <h1 style={{ margin: 0, textAlign: 'center', fontSize: '18px' }}>
+        <Link to="/"
           style={{
-            color: 'white',
+            color: 'black',
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          Tromsø Strikkefestival
         </Link>
       </h1>
     </div>
   </div>
-)
+);
 
-export default Header
+
+
+export default Header;
