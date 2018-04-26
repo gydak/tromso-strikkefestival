@@ -1,16 +1,11 @@
 import React from 'react';
+import '../styles/sidebar.css';
 
 const Sidebar = (props) => (
-  <div
-      style={{
-        border: '2px solid #e6e6e6',
-        maxWidth: 960,
-        padding: '0.5rem',
-        marginBottom: '25px'
-      }}
-      >
-      <strong>{props.title}.</strong> {props.description}
+  <div id='sidebar-div'>
+    <h3 id='sidebar-header'>{props.title}</h3>
+    <p id='sidebar-text'>{props.description} </p>
   </div>
-  );
+);
 
-  export default Sidebar;
+export default Sidebar;

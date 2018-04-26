@@ -1,0 +1,162 @@
+#outer-header-div {
+  display: flex;
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+/*  Menu commons, and title and date  */
+
+.menu-link a {
+  text-decoration: none;
+}
+
+#menu-title-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu-title {
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  padding-right: 1.4rem;
+  margin-bottom: 0.3rem;
+  color: white;
+}
+#menu-date {
+  font-size: 0.9rem !important;
+  font-weight: 100 !important;
+  padding-top: 0.2rem;
+  color: #fff;
+}
+
+
+
+/*  Menu big screens  */
+
+#menu-big-screen {
+  display: flex;
+  flex-direction: row;
+  background-color:  #4484ce;
+  border-bottom: 3px solid #f19f4d;
+  padding: 1rem 0.5rem 0.5rem 3rem;
+}
+
+#menu-big-screen-title {
+  flex: 35%;
+  align-items: center;
+}
+
+#menu-big-screen-menu {
+  flex: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-item-large a p {
+  color: white;
+  font-size: 0.9rem;
+  margin: 0 0.7rem;
+}
+
+.menu-item-large a p:hover {
+  color: black;
+}
+
+
+
+/*  Menu small screens  */
+
+#menu-small-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu-small-screen-header {
+  display: flex;
+  flex-direction: row;
+  background-color:  #4484ce;
+  border-bottom: 3px solid #f19f4d;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+#menu-small-screen-header-title {
+  flex: 90%;
+}
+
+  /* dropdown  */
+
+#menu-drop-down-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+  background-color: #d9d9d9;
+  padding: 1rem 0 0 1.5rem;
+  border-bottom: 3px solid #f19f4d;
+  font-weight: 2rem;
+}
+#menu-drop-down-closed {
+  display: none;
+}
+
+
+  /*  Hamburger button  */
+
+
+.hamburger-icon {
+  flex: 10%;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.clicked .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+.clicked .bar2 {
+  opacity: 0;
+}
+.clicked .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+
+/*  Header image  */
+
+#header-image-div {
+  margin-bottom: 1rem;
+  margin-top: 110px; /* Because of fixed header */
+}
+
+#header-image {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+

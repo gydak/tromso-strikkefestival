@@ -18,61 +18,35 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header />
-    <div
-      style={{
-        margin: "0 auto",
-        maxWidth: 980,
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-between",
-        height: "100%"
-      }}
-    >
+    <div id='main-div'>
       <Media query={{ maxWidth: 848 }}>
         {matches =>
           matches ? (
-            <div
-              style={{
-                margin: "0 auto",
-                maxWidth: 980,
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-                height: "100%",
-                padding: "25px"
-              }}
-            >
-              <div style={{ flex: 1 }}>{children()}</div>
-            </div>
-          ) : (
-              <div
-                style={{
-                  margin: "0 auto",
-                  maxWidth: 980,
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                  height: "100%",
-                  padding: "25px"
-                }}
-              >
-                <div style={{ flex: 2.5, paddingRight: "30px" }}>
-                  {children()}
-                </div>
-                <div style={{ flex: 1 }}>
-                  <Sidebar
-                    title="Tromsø strikkefestival"
-                    description="Ad excepteur veniam id do et enim est magna anim officia cillum. Commodo eiusmod 
-                    veniam Lorem et nostrud aliquip officia sit commodo laborum. Deserunt enim incididunt
-                    esse eiusmod ad non Lorem aliquip nisi proident ut sint. Cupidatat est duis non adipisicing."
-                  />
-                  <Sidebar
-                    title="Kontakt oss:"
-                    description="Epost...."
-                  />
-                </div>
+            <div className={'layout-blog-div'}>
+              <div id='layout-blog-div-small'>
+              {children()}
               </div>
-            )
+            </div>
+          ) : 
+          (
+            <div className={'layout-blog-div'}>
+              <div id='layout-blog-div-big'>
+                {children()}
+              </div>
+              <div id='layout-sidebar-div'>
+                <Sidebar
+                  title="Tromsø strikkefestival"
+                  description="Ad excepteur veniam id do et enim est magna anim officia cillum. Commodo eiusmod 
+                  veniam Lorem et nostrud aliquip officia sit commodo laborum. Deserunt enim incididunt
+                  esse eiusmod ad non Lorem aliquip nisi proident ut sint. Cupidatat est duis non adipisicing."
+                />
+                <Sidebar
+                  title="Kontakt oss:"
+                  description="Epost...."
+                />
+              </div>
+            </div>
+          )
         }
       </Media>
     </div>

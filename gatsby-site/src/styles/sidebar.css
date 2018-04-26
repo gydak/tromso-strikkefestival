@@ -1,0 +1,15 @@
+#sidebar-div {
+  /*background-color: #f19f4d; */
+  border: 3px dashed #f19f4d;
+  max-width: 960;
+  padding: 0.5rem;
+  margin-bottom: 25px;
+}
+
+#sidebar-header {
+
+}
+
+#sidebar-text {
+
+}
