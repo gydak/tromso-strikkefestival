@@ -5,6 +5,7 @@ import Media from 'react-media'
 
 import Header from '../components/header'
 import Sidebar from '../components/sidebar'
+import Social from '../components/social'
 import './index.css'
 import '../styles/layout.css'
 
@@ -34,16 +35,8 @@ const Layout = ({ children, data }) => (
                 {children()}
               </div>
               <div id='layout-sidebar-div'>
-                <Sidebar
-                  title="Tromsø strikkefestival"
-                  description="Ad excepteur veniam id do et enim est magna anim officia cillum. Commodo eiusmod 
-                  veniam Lorem et nostrud aliquip officia sit commodo laborum. Deserunt enim incididunt
-                  esse eiusmod ad non Lorem aliquip nisi proident ut sint. Cupidatat est duis non adipisicing."
-                />
-                <Sidebar
-                  title="Kontakt oss:"
-                  description="Epost...."
-                />
+                <Sidebar/>
+                <Social/>
               </div>
             </div>
           )

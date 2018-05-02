@@ -7,12 +7,12 @@ class Menu extends Component {
     return (
       <div id={this.props.menuId}>
         <div className={this.props.linkClassName}>
-          <Link to='/'>
+          <Link to='/om-festivalen'>
             <p>Om Festivalen</p>
           </Link>
         </div>
         <div className={this.props.linkClassName}>
-          <Link to='/'>
+          <Link to='/program'>
             <p>Program</p>
           </Link>
         </div>
@@ -22,7 +22,7 @@ class Menu extends Component {
           </Link>
         </div>
         <div className={this.props.linkClassName}>
-          <Link to='/'>
+          <Link to='/barn-og-ungdom'>
             <p>Barn og Ungdom</p>
           </Link>
         </div>

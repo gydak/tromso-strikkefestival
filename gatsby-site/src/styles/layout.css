@@ -15,7 +15,7 @@ body {
 
 #main-div {
   margin: 0 auto;
-  max-width: 980px;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,7 +24,7 @@ body {
 
 .layout-blog-div {
   margin: 0 auto;
-  max-width: 980;
+  max-width: 1200;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

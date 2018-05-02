@@ -1,0 +1,27 @@
+#social-div {
+  border: 3px dashed #f19f4d;
+  max-width: 960;
+  padding: 0.5rem;
+  margin-bottom: 25px;
+}
+
+#social-header {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+#instagram-div{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2;
+}
+
+.instagram-image {
+  width: 50%;
+  padding: 1%;
+}
+
+.instagram-image img {
+  margin: 0;
+}
