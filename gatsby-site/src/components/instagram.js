@@ -15,7 +15,7 @@ class Instagram extends React.Component {
   }
 
   componentDidMount() {
-    let images = []
+    let images = [];
 
     $.ajax({
       url: url,
@@ -38,9 +38,9 @@ class Instagram extends React.Component {
     return (
       <div id='instagram-div'>
         {this.state.images.map(i => {
-          const openImage = () => window.open(i.link)
+          const openImage = () => window.open(i.link);
           return (
-            <div className={'instagram-image'}>
+            <div className={'instagram-image'} key={i.link}>
               <Image src={i.src} responsive onClick={openImage} />
             </div>
           )

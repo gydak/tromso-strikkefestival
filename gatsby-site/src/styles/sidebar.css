@@ -1,15 +1,19 @@
 #sidebar-div {
-  /*background-color: #f19f4d; */
-  border: 3px dashed #f19f4d;
+  background-color: #fff;
+  /*background-image: url('../images/background.png');*/
   max-width: 960;
   padding: 0.5rem;
   margin-bottom: 25px;
+  border-top: 3px solid #f19f4d;
+  box-shadow: 3px 6px 14px #ddd;
 }
+
 
 #sidebar-header {
   text-align: center;
   font-size: 1.1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.6rem;
+  opacity: 1;
 }
 
 #sidebar-text {

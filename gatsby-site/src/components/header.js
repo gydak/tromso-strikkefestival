@@ -28,35 +28,36 @@ class Header extends Component {
   render() {
     return (
       <div id='outer-header-div'>
-
         <Media query={{ maxWidth: 848 }}>
           {matches =>
             matches ? (
-              <div id='menu-small-screen' className={'sticky'}>
-
-                <div id='menu-small-screen-header'>
-                  <div id='menu-small-screen-header-title' className={'menu-link'}>
-                    <Link to='/'>
-                      <h2 id='menu-title'>Tromsø Strikkefestival</h2>
-                    </Link>
-                    <Link to='/'>
-                      <h2 id='menu-date'>12. - 14. Oktober 2018</h2>
-                    </Link>
+              <div>
+                <div id='menu-small-screen' className={'sticky'}>
+                  <div id='menu-small-screen-header'>
+                    <div id='menu-small-screen-header-title' className={'menu-link'}>
+                      <Link to='/'>
+                        <h2 id='menu-title'>Tromsø Strikkefestival</h2>
+                      </Link>
+                      <Link to='/'>
+                        <h2 id='menu-date'>12. - 14. Oktober 2018</h2>
+                      </Link>
+                    </div>
+                    <div className={this.state.hamburgerMenuClassName} onClick={this.clickMenu}>
+                      <div className={'bar1'}></div>
+                      <div className={'bar2'}></div>
+                      <div className={'bar3'}></div>
+                    </div>
                   </div>
-                  <div className={this.state.hamburgerMenuClassName} onClick={this.clickMenu}>
-                    <div className={'bar1'}></div>
-                    <div className={'bar2'}></div>
-                    <div className={'bar3'}></div>
-                  </div>
+                  <Menu
+                    menuId={this.state.menuVisibility}
+                    linkClassName={'menu-item-small menu-link'}
+                  />
                 </div>
-                <Menu
-                  menuId={this.state.menuVisibility}
-                  linkClassName={'menu-item-small menu-link'}
-                />
+                <div id='header-image-div'/> {/* liten hack for at padding med header skal bli riktig */}
               </div>
             ) : (
+              <div>
                 <div id='menu-big-screen' className={'sticky'}>
-
                   <div id='menu-big-screen-title' className={'menu-link'}>
                     <Link to='/'>
                       <h2 id='menu-title'>Tromsø Strikkefestival</h2>
@@ -70,16 +71,15 @@ class Header extends Component {
                     linkClassName={'menu-item-large menu-link'}
                   />
                 </div>
+                <div id='header-image-div'>
+                  <Link to='/'>
+                    <img src={headerImage} alt={'Header image'} id='header-image' />
+                  </Link>
+                </div>
+              </div>
               )
           }
         </Media>
-
-        <div id='header-image-div'>
-          <Link to='/'>
-            <img src={headerImage} alt={'Header image'} id='header-image' />
-          </Link>
-        </div>
-
       </div >
     );
   }

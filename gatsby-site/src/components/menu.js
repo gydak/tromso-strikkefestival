@@ -8,24 +8,26 @@ class Menu extends Component {
       <div id={this.props.menuId}>
         <div className={this.props.linkClassName}>
           <Link to='/om-festivalen'>
-            <p>Om Festivalen</p>
+            <p>OM FESTIVALEN</p>
           </Link>
         </div>
         <div className={this.props.linkClassName}>
           <Link to='/program'>
-            <p>Program</p>
+            <p>PROGRAM</p>
           </Link>
         </div>
         <div className={this.props.linkClassName}>
-          <Link to='/hvem-kommer'>
-            <p>Hvem Kommer?</p>
+          <Link to='/praktisk-info'>
+            <p>PRAKTISK INFO</p>
           </Link>
         </div>
+        {/*
         <div className={this.props.linkClassName}>
           <Link to='/barn-og-ungdom'>
-            <p>Barn og Ungdom</p>
+            <p>BARN OG UNGDOM</p>
           </Link>
         </div>
+        */}
       </div>
     );
   }

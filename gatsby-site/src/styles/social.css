@@ -1,8 +1,9 @@
 #social-div {
-  border: 3px dashed #f19f4d;
   max-width: 960;
   padding: 0.5rem;
   margin-bottom: 25px;
+  border-top: 3px solid #f19f4d;
+  box-shadow: 5px 10px 18px #bbb;
 }
 
 #social-header {

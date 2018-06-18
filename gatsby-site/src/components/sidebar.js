@@ -1,12 +1,14 @@
 import React from 'react';
 import '../styles/sidebar.css';
+import logo from '../images/background.png';
 
 const Sidebar = (props) => (
   <div id='sidebar-div'>
-    <h3 id='sidebar-header'>Velkommen til årets festival!</h3>
+    <h3 id='sidebar-header'>NORDNORSK STRIKKELYKKE</h3>
     <p id='sidebar-text'>
-      Aute do sunt adipisicing dolor Lorem. Veniam nulla in magna quis ex Lorem do aute magna
-      deserunt occaecat do aliqua. Ad est laborum nostrud officia est velit quis ad.
+      Vi løfter temaet Nordnorsk stikkelykke med oss videre i år også, og håper at 
+      årets festival, for 8ende år på rad, vil gi påfyll av enorm strikkeglede og 
+      inspirasjon. Hjertelig velkommen til årets strikkefestival på Veita.
     </p>
     <p id='sidebar-email'>
       <b>Spørsmål?</b> Send oss en&nbsp;
