@@ -12,6 +12,13 @@ module.exports = {
         name: 'blog',
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/program`,
+        name: 'program',
+      },
+    },
     'gatsby-transformer-remark',
   ],
 }

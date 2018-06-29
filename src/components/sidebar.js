@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/sidebar.css';
-import logo from '../images/background.png';
 
 const Sidebar = (props) => (
   <div id='sidebar-div'>
