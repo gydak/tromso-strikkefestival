@@ -2,6 +2,12 @@
 path: "/designkonkurranse"
 date: "2018-06-18T17:12:33.962Z"
 title: "Tromsø strikkefestival holder designkonkurranse!"
+
+image: null
+day: null
+time: null
+location: null
+signup: null
 ---
 
 La den nordnorske strikkelykken inspirere deg! Vi utlyser konkurranse for de kreative designerspirer. Vi lager en flott utstilling av bidragene under festivalen, som vil bli juryert av både fagjury og folkejury.

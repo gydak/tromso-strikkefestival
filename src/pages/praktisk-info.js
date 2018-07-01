@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import '../styles/info.css';
+import image from './../images/festivalshop.jpg';
 
 const PraktiskInfo = () => (
   <div>
@@ -32,6 +33,7 @@ const PraktiskInfo = () => (
       La den nordnorske strikkelykken inspirere deg! Vi utlyser konkurranse for de kreative designerspirer. Vi lager en flott utstilling av bidragene under festivalen, som vil bli juryert av både fagjury og folkejury.
       Les mer <Link to="/designkonkurranse">HER</Link>.
     </p>
+    <img src={image} alt={'Header image'} id='header-image' />
   </div>
 )
 

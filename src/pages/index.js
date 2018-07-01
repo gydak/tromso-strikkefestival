@@ -5,12 +5,12 @@ import '../styles/blog.css';
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
-  console.log(posts);
-  
+  const blogPosts = posts.filter(post => post.node.id.indexOf('pages/blog') > 0);
+    
   return (
     <div className="blog-posts">
       <h3>SISTE NYTT FRA FESTIVALEN:</h3>
-      {posts
+      {blogPosts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
           return (
