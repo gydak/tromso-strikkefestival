@@ -1,7 +1,7 @@
 ---
 path: "/strikkekafe-torsdag"
 date: "2018-10-11T10:30:00.000Z"
-title: "Åpning av festivalen!" 
+title: "Strikkekafé!" 
 day: "Torsdag"
 time: "Kommer"
 location: Veita Plan 3
