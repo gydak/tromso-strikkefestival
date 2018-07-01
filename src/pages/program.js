@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import '../styles/program.css';
+import { log } from 'util';
 
 export default function Program({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   const programPosts = posts.filter(post => post.node.id.indexOf('pages/program') > 0);
-  
+
   return (
     <div className="blog-posts">
       <h1>Program</h1>
@@ -13,17 +14,25 @@ export default function Program({ data }) {
       {programPosts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
+          const image = post.frontmatter.image != null ? post.frontmatter.image.childImageSharp.resize.src : require('./program/placeholder.jpg');          
           return (
             <div className="event-preview" key={post.id}>
               <Link to={post.frontmatter.path}>
-                <div className='event-header'>
-                  <h3>{post.frontmatter.title}</h3>
-                  <h4>{post.frontmatter.day}</h4>
-                  <h4>{post.frontmatter.time}</h4>
-                  <h4>{post.frontmatter.location}</h4>
-                </div>
-                <div className='event-body'>
-                  <p>{post.excerpt}</p>
+                <div className="event-preview-main">
+                  <div className="event-preview-left">
+                    <img src={image} alt='event image' className="event-image"/>
+                  </div>
+                  <div className="event-preview-right">
+                    <div className='event-preview-header'>
+                      <h3>{post.frontmatter.title}</h3>
+                      <h4>{post.frontmatter.day}</h4>
+                      <h4>{post.frontmatter.time}</h4>
+                      <h4>{post.frontmatter.location}</h4>
+                    </div>
+                    <div className='event-preview-body'>
+                      <p>{post.excerpt}</p>
+                    </div>
+                  </div>
                 </div>
               </Link>
             </div>
@@ -47,6 +56,13 @@ export const programQuery = graphql`
             time
             location
             path
+            image {
+              childImageSharp {
+                resize(width: 1500, height: 1500) {
+                  src
+                }
+              }
+            }
           }
         }
       }

@@ -2,13 +2,19 @@
   text-decoration: none;
 }
 
-.event-preview h1 {
-  
+.event-preview-main {
+  display: flex;
 }
 
-.event-preview h1 > * {
-  
+.event-preview-left {
+  flex: 1;
 }
-.event-preview h2 {
-  
+
+.event-prieview-right {
+  flex: 2;
 }
+
+/*
+.event-image {
+  max-width: 100px;
+}*/

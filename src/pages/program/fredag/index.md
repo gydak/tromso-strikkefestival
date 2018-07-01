@@ -6,7 +6,7 @@ day: "Fredag"
 time: "19.00"
 location: Veita Plan 3
 
-image: null
+image: "strikkequiz.jpg"
 signup: null
 ---
 

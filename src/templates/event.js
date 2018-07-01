@@ -32,7 +32,13 @@ export const pageQuery = graphql`
         day
         time
         location
-        path
+        image {
+          childImageSharp {
+            resize(width: 1500, height: 1500) {
+              src
+            }
+          }
+        }
       }
     }
   }

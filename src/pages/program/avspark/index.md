@@ -6,7 +6,7 @@ day: "Mandag"
 time: "16.00-18.00"
 location: Veita Plan 3
 
-image: null
+image: "festival.jpg"
 signup: null
 ---
 
