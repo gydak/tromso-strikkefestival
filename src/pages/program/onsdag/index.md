@@ -1,14 +1,14 @@
 ---
 path: "/bibliotekets-strikkekafe"
 date: "2018-10-10T10:30:00.000Z"
-title: "Bibliotekets strikkekafé!" 
+title: "Utstillingsåpning av designkonkurransen Nordnorsk strikkelykke" 
 day: "Onsdag"
-time: "Kommer"
+time: "16:00"
 location: Veita Plan 3
 
 image: "afterstrikk.jpg"
 signup: null
 ---
 
-Bibliotekets strikkekafe flytter inn på Plan 3 på Veita i anledning
-Strikkefestivaluka. Temaet for kafeen kommer snart.
+Vi har offisiell åpning av designkonkurransen. Avstemmingen
+starter og alle kan få studere prosjektene nøye.
