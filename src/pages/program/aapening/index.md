@@ -11,3 +11,4 @@ signup: null
 ---
 
 Offisiell åpning av festivalen!
+Ordfører Kristin Røymo kommer og åpner festivalen.
